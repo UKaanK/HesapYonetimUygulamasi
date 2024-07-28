@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class registerscreenkayityazisiwidget extends StatelessWidget {
@@ -9,15 +8,13 @@ class registerscreenkayityazisiwidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 150, bottom: 70),
+      padding: const EdgeInsets.only(top: 150, bottom: 50),
       child: Container(
-          child: Text(
-        "Kayıt Ol",
-        style: TextStyle(
-            color: Colors.white,
-            fontSize: 40,
-            fontWeight: FontWeight.bold),
-      )),
+         child: Image.asset(
+          "assets/images/logo.png",
+          width: MediaQuery.of(context).size.width/3,
+        ),
+      ),
     );
   }
 }

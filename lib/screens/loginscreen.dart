@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:hesapyonetim/widgets/loginscreengiriswidget.dart';
+import 'package:hesapyonetim/widgets/loginscreenhosgeldinizyazisiwidget.dart';
+import 'package:hesapyonetim/widgets/loginscreenkayitolwidget.dart';
+import 'package:hesapyonetim/widgets/loginscreentnumarasigiriswidget.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -17,71 +21,20 @@ class _LoginScreenState extends State<LoginScreen> {
         color: Colors.blue[300],
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        child: Column(
+        child: const Column(
           children: [
             loginscreenhosgeldinizyazisiwidget(),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 children: [
-                  Column(
-                    children: [
-                      const Text(
-                        "Telefon Numarası",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10.0),
-                        child: Container(
-                          decoration: BoxDecoration(
-                              border: Border.all(),
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(20)),
-                          width: MediaQuery.of(context).size.width / 1.7,
-                          child: TextFormField(
-                            textAlign: TextAlign.center,
-                            keyboardType: TextInputType.phone,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+                  loginscreentnumarasigiriswidget(),
                   Padding(
                     padding: const EdgeInsets.only(top:15.0),
                     child: Row(
                       children: [
-                        Container(
-                            decoration: BoxDecoration(
-                                border: Border.all(),
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(20)),
-                            width: MediaQuery.of(context).size.width / 2.17,
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                  shadowColor: Colors.transparent, elevation: 0),
-                              onPressed: () {},
-                              child: Text("Giriş"),
-                            )),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 8.0),
-                          child: Container(
-                              decoration: BoxDecoration(
-                                  border: Border.all(),
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(20)),
-                              width: MediaQuery.of(context).size.width / 2.17,
-                              child: ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                    shadowColor: Colors.transparent,
-                                    elevation: 0),
-                                onPressed: () {},
-                                child: Text("Kayıt Ol"),
-                              )),
-                        ),
+                        loginscreengiriswidget(),
+                        loginscreenkayitolwidget(),
                       ],
                     ),
                   )
@@ -95,21 +48,3 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 }
 
-class loginscreenhosgeldinizyazisiwidget extends StatelessWidget {
-  const loginscreenhosgeldinizyazisiwidget({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 200, bottom: 70),
-      child: Container(
-          child: Text(
-        "Hoşgeldiniz",
-        style: TextStyle(
-            color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),
-      )),
-    );
-  }
-}
