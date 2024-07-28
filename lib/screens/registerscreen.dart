@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hesapyonetim/widgets/registerscreenadwidget.dart';
-import 'package:hesapyonetim/widgets/registerscreenkayitolwidget.dart';
-import 'package:hesapyonetim/widgets/registerscreenkayityazisiwidget.dart';
-import 'package:hesapyonetim/widgets/registerscreensoyadwidget.dart';
-import 'package:hesapyonetim/widgets/registerscreentnumarasiwidget.dart';
+import 'package:hesapyonetim/widgets/registerscreenwidgets/registerscreenadwidget.dart';
+import 'package:hesapyonetim/widgets/registerscreenwidgets/registerscreenkayitolwidget.dart';
+import 'package:hesapyonetim/widgets/registerscreenwidgets/registerscreenkayityazisiwidget.dart';
+import 'package:hesapyonetim/widgets/registerscreenwidgets/registerscreensoyadwidget.dart';
+import 'package:hesapyonetim/widgets/registerscreenwidgets/registerscreentnumarasiwidget.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});

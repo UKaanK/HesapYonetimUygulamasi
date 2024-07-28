@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hesapyonetim/screens/mainscreen.dart';
 import 'package:hesapyonetim/screens/registerscreen.dart';
 import 'package:hesapyonetim/screens/splashscreen.dart';
 import 'package:hesapyonetim/screens/verificationscreen.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const VerificationScreen(),
+      home: const MainScreen(),
     );
   }
 }

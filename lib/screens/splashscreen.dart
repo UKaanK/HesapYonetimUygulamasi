@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hesapyonetim/screens/loginscreen.dart';
-import 'package:hesapyonetim/widgets/splashscreenbaslikwidget.dart';
-import 'package:hesapyonetim/widgets/splashscreenlogowidget.dart';
+import 'package:hesapyonetim/widgets/splashscreenwidgets/splashscreenbaslikwidget.dart';
+import 'package:hesapyonetim/widgets/splashscreenwidgets/splashscreenlogowidget.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:hesapyonetim/widgets/verificationscreenwidgets.dart/verificationscreenbox1widget.dart';
+import 'package:hesapyonetim/widgets/verificationscreenwidgets.dart/verificationscreenbox2widget.dart';
+import 'package:hesapyonetim/widgets/verificationscreenwidgets.dart/verificationscreenbox3widget.dart';
+import 'package:hesapyonetim/widgets/verificationscreenwidgets.dart/verificationscreenbox4widget.dart';
+import 'package:hesapyonetim/widgets/verificationscreenwidgets.dart/verificationscreengirisbwidget.dart';
 
 class VerificationScreen extends StatefulWidget {
   const VerificationScreen({super.key});
@@ -28,116 +33,13 @@ class _VerificationScreenState extends State<VerificationScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: MediaQuery.of(context).size.width / 5,
-                        height: 100,
-                        alignment: Alignment.center,
-                        color: Colors.white,
-                        child: TextField(
-                          keyboardType: TextInputType.number,
-                          textAlign: TextAlign.center,
-                          textAlignVertical: TextAlignVertical.center,
-                           style: TextStyle(
-                            fontSize: 25
-                          ),
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            enabledBorder: InputBorder.none,
-                            focusedBorder: InputBorder.none,
-                            contentPadding: EdgeInsets.only(bottom: 8),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: MediaQuery.of(context).size.width / 5,
-                        height: 100,
-                        alignment: Alignment.center,
-                        color: Colors.white,
-                        child: TextField(
-                          keyboardType: TextInputType.number,
-                          textAlign: TextAlign.center,
-                          textAlignVertical: TextAlignVertical.center,
-                           style: TextStyle(
-                            fontSize: 25
-                          ),
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            enabledBorder: InputBorder.none,
-                            focusedBorder: InputBorder.none,
-                            contentPadding: EdgeInsets.only(bottom: 8),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: MediaQuery.of(context).size.width / 5,
-                        height: 100,
-                        alignment: Alignment.center,
-                        color: Colors.white,
-                        child: TextField(
-                          
-                          keyboardType: TextInputType.number,
-                          textAlign: TextAlign.center,
-                          textAlignVertical: TextAlignVertical.center,
-                           style: TextStyle(
-                            fontSize: 25
-                          ),
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            enabledBorder: InputBorder.none,
-                            focusedBorder: InputBorder.none,
-                            contentPadding: EdgeInsets.only(bottom: 8),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: MediaQuery.of(context).size.width / 5,
-                        height: 100,
-                        alignment: Alignment.center,
-                        color: Colors.white,
-                        child: TextField(
-                          keyboardType: TextInputType.number,
-                          textAlign: TextAlign.center,
-                          textAlignVertical: TextAlignVertical.center,
-                          style: TextStyle(
-                            fontSize: 25
-                          ),
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            enabledBorder: InputBorder.none,
-                            focusedBorder: InputBorder.none,
-                            contentPadding: EdgeInsets.only(bottom: 8),
-                          ),
-                        ),
-                      ),
-                    )
+                    verificationscreenbox1widget(),
+                    verificationscreenbox2widget(),
+                    verificationscreenbox3widget(),
+                    verificationscreenbox4widget()
                   ],
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top:20.0),
-                  child: Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(),
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(20)),
-                      width: MediaQuery.of(context).size.width / 2.17,
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                            shadowColor: Colors.transparent, elevation: 0),
-                        onPressed: () {},
-                        child: Text("Giriş"),
-                      )),
-                )
+                verificationscreengirisbwidget()
               ],
             ),
           ),
@@ -146,3 +48,4 @@ class _VerificationScreenState extends State<VerificationScreen> {
     );
   }
 }
+

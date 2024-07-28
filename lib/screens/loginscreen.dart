@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:hesapyonetim/widgets/loginscreengiriswidget.dart';
-import 'package:hesapyonetim/widgets/loginscreenhosgeldinizyazisiwidget.dart';
-import 'package:hesapyonetim/widgets/loginscreenkayitolwidget.dart';
-import 'package:hesapyonetim/widgets/loginscreentnumarasigiriswidget.dart';
+import 'package:hesapyonetim/widgets/loginscreenwidgets/loginscreengiriswidget.dart';
+import 'package:hesapyonetim/widgets/loginscreenwidgets/loginscreenhosgeldinizyazisiwidget.dart';
+import 'package:hesapyonetim/widgets/loginscreenwidgets/loginscreenkayitolwidget.dart';
+import 'package:hesapyonetim/widgets/loginscreenwidgets/loginscreentnumarasigiriswidget.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
